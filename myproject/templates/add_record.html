@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<form method="POST" >
+{% csrf_token %}
+{{recordform.as_p}}
+        <button type="submit" class="btn btn-primary">ADD RECORD</button>
+</form>
+{% endblock content %}
